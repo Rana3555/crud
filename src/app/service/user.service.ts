@@ -7,9 +7,9 @@ import { User } from '../user';
 export class UserService {
     private userList: User[] = [{
         id: 1,
-        name: 'Ankit Sahu',
+        name: 'Sriram',
         dob: new Date('08/31/1992'),
-        email: 'ankit@gmail.com',
+        email: 'ram@gmail.com',
         gender: 'Male',
         mobile: '8978786933',
         isActive: true,

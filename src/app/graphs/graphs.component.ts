@@ -119,4 +119,40 @@ export class GraphsComponent implements OnInit {
         height: 500
       }]
     }
+    private zoom = {
+      x:['2020-10-04', '2021-11-04', '2023-12-04'],
+      y: [90, 40, 60],
+      type: 'scatter'
+    };
+
+    data = [this.zoom];
+     layout = {
+    title: 'Scroll and Zoom',
+    showlegend: false
+    };
+    config={
+    scrollZoom: true
+  }
+  trace = {
+    x:['Zebras', 'Lions', 'Pelicans'],
+    y: [90, 40, 60],
+    type: 'bar',
+    name: 'New York Zoo'
+  }
+  trace2 = {
+    x:['Zebras', 'Lions', 'Pelicans'],
+    y: [10, 80, 45],
+    type: 'bar',
+    name: 'San Francisco Zoo'
+  }
+    chart={
+   data : [this.trace,this.trace2],
+   layout : {
+    title: 'Hide the Modebar',
+    showlegend: true
+  },
+  config:{
+    displayModeBar:false
+  }
+  }
   }

@@ -16,8 +16,7 @@ export class UserListComponent implements OnInit {
         // Get Users from UserService
         this.userList = this.userService.getUsers();
     }
-    //****************PrimeNG DataTable Pagination method Start*********************** */
-    //***************Reference: https://primefaces.org/primeng/showcase/#/table/page********** */
+    
     next() {
         this.first = this.first + this.rows;
     }
@@ -33,8 +32,6 @@ export class UserListComponent implements OnInit {
     isFirstPage(): boolean {
         return this.userList ? this.first === 0 : true;
     }
-    //****************PrimeNG DataTable Pagination Method End*********************** */
-    // ********************User To Remove User from User List*************************/
     remove(id: number) {
         this.userService.removeUser(id);
         this.userList = this.userService.getUsers();

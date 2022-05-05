@@ -18,7 +18,7 @@ export class AddUserComponent implements OnInit {
     private fb: FormBuilder,
     private userService: UserService
   ) {
-    //**************Create Reactive Form with validation********************* */
+    //Create Reactive Form with validation/
     this.userform = this.fb.group({
       name: ['', [Validators.required]],
       mobile: ['', []],
@@ -27,14 +27,13 @@ export class AddUserComponent implements OnInit {
       dob: [null, [Validators.required]],
       id: [0, [Validators.required]],
       isActive: [true],
-      // range: [[0, 10]],
       userType: ['', [Validators.required]],
     });
 
   }
 
   ngOnInit(): void {
-    //**************Get User ID On Edit********************* */
+    //Get User ID On Edit/
     this.route.params.subscribe(params => {
       this.id = params['id'];
       if (params['id'] != null) {

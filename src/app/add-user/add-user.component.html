@@ -22,22 +22,12 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="mb-1">
-            <label for="range" class="form-label">Range</label>
-            <div class="input-group has-validation">
-                <p-slider formControlName="range" [ngClass]="{'form-control': true, 'is-invalid': userform.get('range')?.invalid &&
-                (userform.get('range')?.dirty || userform.get('range')?.touched)}" [range]="true"></p-slider>
-                <div class="invalid-feedback">
-                    This field is required.
-                </div>
-            </div>
-        </div> -->
         <div class="mb-1">
             <label for="email" class="form-label">Email</label>
             <div class="input-group has-validation">
                 <input type="email" [ngClass]="{'form-control': true, 'is-invalid': userform.get('email')?.invalid &&
                     (userform.get('email')?.dirty || userform.get('email')?.touched)}" id="email" name="email"
-                    formControlName="email" placeholder="xyz@gmail.com">
+                    formControlName="email" placeholder="abc@gmail.com">
                 <div class="invalid-feedback">
                     {{userform.get('email')?.hasError('required') ? 'This field is required.':'Invalid Email'}}
                 </div>
@@ -77,21 +67,11 @@
             </div>
         </div>
         <div class="mb-1">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" formControlName="isActive" id="isActive">
-                <label class="form-check-label" for="isActive">Is Active</label>
-            </div>
-        </div>
-        <div class="mb-1">
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button (click)="save()" [disabled]="userform.invalid" class="btn btn-primary" type="button">
+                <button (click)="save()" [disabled]="userform.invalid" class="btn btn-success" type="button">
                     {{id==0 || id==null ?'Save':'Update'}}</button>
-                <button class="btn btn-secondary" type="button">Reset </button>
+                <!-- <button class="btn btn-secondary" type="button">Reset </button> -->
             </div>
         </div>
-
-        <!-- <div class="mb-1">
-            {{userform.value |json}}
-        </div> -->
     </form>
 </div>
