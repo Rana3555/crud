@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"reg",component:RegistrationComponent},
   {path:"login",component:LoginComponent},
   {path:"graphs",component:GraphsComponent},
-  { path: '', component: HomeComponent },
+  { path: 'homee', component: HomeeComponent },
   { path: 'user', component: UserListComponent },
   { path: 'add-user', component: AddUserComponent },
   { path: 'update-user/:id', component: AddUserComponent }

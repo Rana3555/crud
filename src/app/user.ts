@@ -2,7 +2,7 @@ export interface User {
     id: number,
     name: string,
     email: string,
-    mobile: string,
+    Mobile: number,
     gender: string,
     dob: Date,
     isActive: boolean,

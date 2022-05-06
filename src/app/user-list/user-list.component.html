@@ -8,7 +8,6 @@
                 <th>Email</th>
                 <th>Mobile</th>
                 <th>DOB</th>
-                <th>isActive</th>
                 <th>Action</th>
             </tr>
         </ng-template>
@@ -16,9 +15,8 @@
             <tr [ngClass]="{'inActive': user.isActive == false}">
                 <td>{{user.name}}</td>
                 <td>{{user.email}}</td>
-                <td>{{user.mobile}}</td>
+                <td>{{user.Mobile}}</td>
                 <td>{{user.dob | date:'d/M/yyyy'}}</td>
-                <td>{{user.isActive}}</td>
                 <td>
                     <a pButton pRipple type="button" [routerLink]="['/update-user',user.id]" icon="pi pi-user-edit"
                         class="p-button-rounded"></a>

@@ -8,12 +8,11 @@ export class UserService {
     private userList: User[] = [{
         id: 1,
         name: 'Sriram',
-        dob: new Date('08/31/1992'),
+        dob: new Date('01/21/1997'),
         email: 'ram@gmail.com',
         gender: 'Male',
-        mobile: '8978786933',
+        Mobile: 8978786938,
         isActive: true,
-        range: [0, 10],
         userType: 'Admin'
     }];
     constructor() {}
