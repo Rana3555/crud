@@ -86,7 +86,7 @@ export class GraphsComponent implements OnInit {
         grid: { rows: 1, columns: 2 }
       }
     }
-    graph4 = {
+    graph9 = {
       data: [
         {
           type: "sunburst",
@@ -175,7 +175,7 @@ export class GraphsComponent implements OnInit {
 
  layout :[{ width: 600, height: 450, xaxis: { range: [0, 62]}}]  
  }
- 
+
  graph4 = {
   data: [{type: "sunburst",
       labels: ["Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"],
