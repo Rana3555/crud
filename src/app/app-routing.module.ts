@@ -8,18 +8,22 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { HomeeComponent } from './homee/homee.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
-  {path: "", pathMatch: "full",redirectTo: "/home"},
-  {path: 'home', component:HomeComponent},
-  {path: "header", component:HeaderComponent},
-  {path:"reg",component:RegistrationComponent},
-  {path:"login",component:LoginComponent},
-  {path:"graphs",component:GraphsComponent},
+  { path: "", pathMatch: "full",redirectTo: "/home"},
+  { path: 'home', component:HomeComponent},
+  { path: "header", component:HeaderComponent},
+  { path:"reg",component:RegistrationComponent},
+  { path:"login",component:LoginComponent},
+  { path:"graphs",component:GraphsComponent},
   { path: 'homee', component: HomeeComponent },
   { path: 'user', component: UserListComponent },
   { path: 'add-user', component: AddUserComponent },
-  { path: 'update-user/:id', component: AddUserComponent }
+  { path: 'update-user/:id', component: AddUserComponent },
+  { path: 'child', component:ChildComponent},
+  { path: 'parent', component:ParentComponent}
   
   ];
 

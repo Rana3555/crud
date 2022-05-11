@@ -7,6 +7,8 @@ import * as Plotly from 'plotly.js';
   styleUrls: ['./graphs.component.sass']
 })
 export class GraphsComponent implements OnInit {
+  trace9: any;
+  traace: any;
     ngOnInit(): void {
       throw new Error('Method not implemented.');
     }
@@ -317,7 +319,7 @@ custom ={
   
   // new8/
   DownloadChartasSVGinsteadofPNG ={
-    trace1 : {
+    trace : {
       x: [0, 1, 2, 3, 4, 5, 6],
       y: [1, 9, 4, 7, 5, 2, 4],
       mode: 'markers',
@@ -325,7 +327,7 @@ custom ={
           size: [20, 40, 25, 10, 60, 90, 30],
       }
   }, 
-  data : [this.trace1],
+  data : [ this.trace ],
   layout : {
       title: 'Download Chart as SVG instead of PNG',
       showlegend: false

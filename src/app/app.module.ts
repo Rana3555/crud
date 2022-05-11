@@ -25,6 +25,8 @@ import { HomeeComponent } from './homee/homee.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
@@ -38,7 +40,9 @@ PlotlyModule.plotlyjs = PlotlyJS;
     HomeeComponent,
     UserListComponent,
     AddUserComponent,
-    NavBarComponent
+    NavBarComponent,
+    ParentComponent,
+    ChildComponent
 
   
    
