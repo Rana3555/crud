@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../user';
+import { HttpClient} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,11 @@ export class UserService {
         isActive: true,
         userType: 'Admin'
     }];
-    constructor() {}
+    constructor(private http:HttpClient) {}
+    getData(){
+        let url= "https://crudcrud.com/api/04552d154b33431c8c46b07c169d9463/userList";
+        return this.http.get(url);
+    }
     getUsers() {
         return this.userList
     }

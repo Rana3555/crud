@@ -31,7 +31,7 @@ implements OnInit,
     interval: any;
 
     @Input()
-    myName = "";
+    MyName = "";
     
     @ContentChild('projectedContent', {static: true}) projectedContent: any;
     @ViewChild('childContent', {static: true}) childContent: any;

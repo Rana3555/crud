@@ -27,6 +27,7 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { HttpClientModule} from '@angular/common/http'
 PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
@@ -42,7 +43,7 @@ PlotlyModule.plotlyjs = PlotlyJS;
     AddUserComponent,
     NavBarComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
 
   
    
@@ -60,7 +61,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     ButtonModule,
     TableModule,
     CalendarModule,
-    SliderModule
+    SliderModule,
+    HttpClientModule
     
   ],
   providers: [UserService],
