@@ -10,6 +10,7 @@ import { HomeeComponent } from './homee/homee.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 const routes: Routes = [
   { path: "", pathMatch: "full",redirectTo: "/home"},
@@ -23,7 +24,9 @@ const routes: Routes = [
   { path: 'add-user', component: AddUserComponent },
   { path: 'update-user/:id', component: AddUserComponent },
   { path: 'child', component:ChildComponent},
-  { path: 'parent', component:ParentComponent}
+  { path: 'parent', component:ParentComponent},
+  { path: 'life-cycle', component:LifeCycleComponent}
+  
   
   ];
 

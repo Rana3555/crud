@@ -27,7 +27,9 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { LifeComponent } from './life/life.component'
 PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
@@ -44,6 +46,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     NavBarComponent,
     ParentComponent,
     ChildComponent,
+    LifeCycleComponent,
+    LifeComponent,
 
   
    
